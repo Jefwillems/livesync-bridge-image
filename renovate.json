@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "enabledManagers": ["git-submodules", "github-actions"],
+  "git-submodules": {
+    "enabled": true
+  },
+  "packageRules": [
+    {
+      "matchManagers": ["git-submodules"],
+      "commitMessageTopic": "livesync-bridge upstream",
+      "addLabels": ["upstream-bump"]
+    }
+  ]
+}
