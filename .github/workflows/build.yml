@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout (recursive submodules)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           # livesync-bridge is a submodule, and it has its own `lib` submodule,
           # so we must check out recursively or the build breaks (COPY . .).
